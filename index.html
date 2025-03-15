@@ -1,26 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rich Portfolio</title>
+    <title>Rich - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-</head>
-<body>
+  </head>
+  <body>
+
+    <div class="scrollToTop-btn">
+      <i class="fas fa-angle-up"></i>
+    </div>
+
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+
     <header>
-        <a href="" class="brand" data-aos="zoom-in" data-aos-duration="1000">Dev Portfolio</a>
-        <div class="menu-btn"></div>
-        <div class="navigation">
-            <a href="#home" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Home</a>
-            <a href="#about" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">About</a>
-            <a href="#skills" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Skills</a>
-            <a href="#services" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Services</a>
-            <a href="#projects" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Projects</a>
-            <a href="#contact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Contact</a>
-        </div>
+      <a href="#" class="brand">Rich</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <a href="#main">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
     </header>
+
+    <!-- Rest of your HTML content remains unchanged -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
+<div class="preloader">
+    <div class="loader">
+      <span id="loading-percentage">0%</span>
+    </div>
+  </div>
 
     <section class="main" id="main">
         <div class="content">
@@ -138,28 +157,44 @@
         </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section class="work" id="work">
         <div class="title reveal">
-            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Projects</h2>
+          <h2 class="section-title">My Projects</h2>
         </div>
         <div class="content">
-            <div class="card reveal" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <div class="card-img">
-                    <img src="cyberlockgraphic1resized.jpg" alt="Secure Network Project">
-                </div>
+          <div class="card reveal">
+            <div class="card-img">
+              <img src="Image/work1.jpg" alt="">
             </div>
-            <div class="card reveal" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                <div class="card-img">
-                    <img src="Cyberlockgraphic2resized.png" alt="Complete Enterprise Cloud Security Framework Model">
-                </div>
+            <div class="card-info">
+              <h3>CyberSec Keylogger Project</h3>
+              <p>A sophisticated keylogger with advanced features for cybersecurity research and analysis.</p>
+              <a href="#" class="btn">View Project</a>
             </div>
-            <div class="card reveal" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                <div class="card-img">
-                    <img src="cybergraphic3resized.png" alt="Web Application Firewall">
-                </div>
+          </div>
+          <div class="card reveal">
+            <div class="card-img">
+              <img src="Image/work2.jpg" alt="">
             </div>
+            <div class="card-info">
+              <h3>Web Crawler Project</h3>
+              <p>An efficient web crawler designed for data collection and analysis across various domains.</p>
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="card-img">
+              <img src="Image/work3.jpg" alt="">
+            </div>
+            <div class="card-info">
+              <h3>W.A.R.D.E.N. Defense Framework</h3>
+              <p>A comprehensive cybersecurity defense framework for proactive threat detection and mitigation.</p>
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+      
 
     <section class="contact" id="contact">
         <div class="title reveal">
@@ -224,6 +259,6 @@
     <script>
       AOS.init();
     </script>
-
 </body>
 </html>
+
